@@ -20,7 +20,7 @@
 <body class="container-fluid row">
 	<section id="header_section" class="col-xs-12 col-md-3 col-md-push-9">
 		<div id="header_wrap">
-			<h1><a href="#">NORMCORE RUNNER</a></h1>
+			<h1><a href="<?php bloginfo('url'); ?>">NORMCORE RUNNER</a></h1>
 			<div class="social_icons">
 				<ul class="social_links">
 					<li><a><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>

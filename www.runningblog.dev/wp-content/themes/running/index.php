@@ -2,7 +2,7 @@
 
 /*
 *
-* Template Name: Frontpage
+* Template Name: running
 *
 */
 

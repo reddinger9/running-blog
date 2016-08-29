@@ -20,13 +20,13 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', 'runningbDB7cznh');
+define('DB_NAME', 'runningbDB5da17');
 
 /** MySQL database username */
-define('DB_USER', 'runningbDB7cznh');
+define('DB_USER', 'runningbDB5da17');
 
 /** MySQL database password */
-define('DB_PASSWORD', '14LL7ocfTo');
+define('DB_PASSWORD', 'n38HQ5bkKT');
 
 /** MySQL hostname */
 define('DB_HOST', '127.0.0.1');
@@ -46,14 +46,14 @@ define('DB_COLLATE', '');
  *
  * @since 2.6.0
  */
-define('AUTH_KEY',         'D;e2i*T+amc$FU{Uj3JrJU>j^X*Amy7u^Mn3EV}8k|Nc:VkCRzYn0F@>g|0ozF@>Z');
-define('SECURE_AUTH_KEY',  'X6q2T*{p2H*]W<2e*LW;FQ$7fvMn@Uj}jzIXEm$Tu,bn3q$No4FsJV-4d4Js}grJ');
-define('LOGGED_IN_KEY',    'q$W;9m#Pe;XxDP+$>gv7M,FU}7jBN^BnyQ$<YnF$IUw|N|4c@CO|Rd4KzRc4JrC');
-define('NONCE_KEY',        'T@4o0RsKV:gsRc4c@Fv!Yk0oz5H~Gh[al1S-SeCO|Oo1htKW_VlHT]Tt6myLb2b+L');
-define('AUTH_SALT',        'Z!kFg>grFU|No0Kl:D-GSx1apGp~do4s!KZ[5h8Ow1HT*Wi;Pq*X.;mxW_;lxDt*L');
-define('SECURE_AUTH_SALT', '+XiAmyPe}jvBc>3Y0Fn>Ug3r$IjEf7My,br~Vk:N-|K!:Z-GR|co4V!}d[4g!JZa');
-define('LOGGED_IN_SALT',   'K5@N!g:GzZ}pKt]eDW:9w_Z-5d5Kt:b2E+<e*AmAM.i9L.;m<HX*;Qc>frIUzQg>');
-define('NONCE_SALT',       'pT:lwOa1St5t~WlyQb3EqBM,nE.;m;P+<b+ET0cnFU$}c,4r!JY7juBb,3jFn');
+define('AUTH_KEY',         'mX*#p99#SLxei2*]-K59taS_lh2~[dKS8sZZ]w~l5#0kRVGzgd1~|sC:4oVYJzvg0');
+define('SECURE_AUTH_KEY',  '[C9|VCGwdo8|>vFG:dKN@kvF03^QN8oVY>v,rBE{bIFzfjQ^{yI36mXU^nqX{2.TA');
+define('LOGGED_IN_KEY',    'Rv4@vF00kM$^rB{>vFM3nUjQ.<uI^QBEyfub;+*TA6<XIL*mxi2.#aHD;eiT.q~');
+define('NONCE_KEY',        'Y{q7AnQIybb>2+IL;bX.mm6*#TW9qiL++H;5iOO~ha#]t9K:Zd[sl5~~KV8kkR@wG');
+define('AUTH_SALT',        '<UX*i*yI{{biL++e;#tA9qTd]twD]_OO5lsV||R81hKO-do4!!NK:ddGw@J00gJFs');
+define('SECURE_AUTH_SALT', 'Br0UU7nfMyyF<<qAH;aaHtq6**P2DppW_+i;;aHO-hh:-t9D#SdGwwC[_O15hOV||');
+define('LOGGED_IN_SALT',   '#99iOHtxa#:aGGwZS_ll5C[VV8ohO--GJ}ZYFsg[!N0BnUU^@g}0zFQ$ff{,n3cf');
+define('NONCE_SALT',       'DuTT.$f{yIP+ii;xtA<#TeHtxa#_P25iOV|po81~KO1hoV!!o4:dGKwZk0@@JF[V');
 
 /**#@-*/
 
