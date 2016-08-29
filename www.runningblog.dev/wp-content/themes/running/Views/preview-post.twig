@@ -1,0 +1,14 @@
+
+		<div class="blog_preview_box row">
+			<div class="blog_preview_wrapper">
+				<a href=""><div class="preview_img col-sm-12 col-md-6" style="background-image: url('{{post.get_field('blog_image')}}')"></div></a>
+				<div class="preview_content_wrapper col-sm-12 col-md-6">	
+					<div class="preview_content">
+
+						<h1>{{post.title}}</h1>
+						<div class="preview_text">{{post.get_preview(50, false, '')}}</div>
+						<div class="read_more_link"><a href="{{post.get_path}}">READ THE POST</a></div>
+					</div>
+				</div>				
+			</div>
+		</div>

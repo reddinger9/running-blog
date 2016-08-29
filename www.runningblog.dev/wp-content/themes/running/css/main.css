@@ -1,0 +1,501 @@
+/*
+
+== SITE FONTS ==
+
+Orange Juice, Alegrya, BenchNine
+
+== SITE COLORS ==
+
+COVER PHOTO BANNER BLUE = 77D9D3 / 119,217,211
+NEON YELLOW = F3F315 / 243,243,21
+
+
+*/
+
+/* == UNIVERSAL STYLES == */
+
+@font-face {
+    font-family: 'Orange_Juice';
+    src: url('../fonts/orange_juice.ttf');
+}
+
+header {
+	margin-bottom: 40px;
+}
+
+body a,
+body a:link,
+body a:visited,
+body a:hover,
+body a:active {
+	text-decoration: none;
+	color: inherit;
+	cursor: pointer;
+}
+
+.header_section {
+	box-shadow: 0 10px 18px -10px rgba(0, 0, 0, .5); ;
+}
+
+.content_title {
+	font-family: 'Alegreya', serif;
+	font-weight: 700;
+	margin-top: 0;
+}
+
+#main_title { 
+	font-family: 'Orange_Juice', sans-serif;
+	font-size: 80px;
+	text-align: center;
+	display: block;
+	margin: 40px auto;
+	text-transform: uppercase;
+	}
+
+#emoji_banner {
+	margin: 40px auto 60px;
+	text-align: center;
+}
+
+.em {
+	font-size: 30px;
+}
+
+#main_slogan_wrapper {
+	width: 100%;
+}
+
+#main_slogan {
+	display: block;
+	width: 70%;
+	margin: 40px auto;
+	text-align: center;
+	font-family: 'Alegrya', serif;
+	font-weight: 700;
+	font-size: 18px;
+	text-transform: uppercase;
+	color: #000;
+}
+
+
+nav {
+	display: block;
+	margin: auto;
+	width: 75%;	
+	text-align: center;
+	font-family: 'BenchNine', sans-serif;
+	font-weight: 400;
+	font-size: 26px;
+}
+
+nav ul {
+	list-style-type: none;
+	display: inline-block;
+	margin: auto;
+	padding-left: 0;
+
+}
+
+nav ul li {
+	display: inline;
+	margin: 30px;
+	text-transform: uppercase;
+	transition: border-bottom 0.3s;
+}
+
+nav ul li:hover {
+	border-bottom: 5px solid #77D9D3;
+	color: #666;
+}
+
+/* == PAGE PHOTO SECTION == */
+
+.page_photo_section {
+	height: 400px;
+}
+
+.photo_holder {
+	width: 60%;
+	height: 321px;
+	margin: auto;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+}
+
+.photo_text_box {
+    position: absolute;
+    right: 0;
+    top: 15px;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(119,217,211, .9);
+    color: #FFF;
+    padding: 18px 10px;
+}
+
+.photo_text_box p {
+    font-size: 23px;
+    font-family: 'BenchNine', sans-serif;
+    letter-spacing: 0.1em;
+    margin: 0 0;
+}
+
+.down_arrow {
+	display: block;
+	position: absolute;
+	height: 60px;
+	width: 60px;
+	left: 5%;
+	bottom: 60px;
+	background-color: rgba(54, 54, 54, .6);	
+	border-radius: 30px;
+}
+
+.down_arrow::before {
+	content:"";
+	display: block;
+	height: 30px;
+	width: 30px;
+	border-right: 4px solid #FFF;
+	border-bottom: 4px solid #FFF;
+	transform: rotate(45deg);
+	margin-left: 15px;
+	margin-top: 7px;
+}
+
+/* == MAIN SECTION STYLES == */
+
+#main_section { 
+	padding-top: 20px;
+	}
+
+.single_post_head {
+	margin-bottom: 20px;
+}
+
+#main_section_content > p {
+	margin-top: 20px;
+}
+
+#main_section_content p {
+	line-height: 2.0;
+	margin-bottom: 20px;
+}
+
+.section_title {
+	font-size: 40px;
+}
+
+/* == BLOG PREVIEW SECTION STYLES == */
+
+#fp_blog_section {
+	padding: 0 30px 0 30px;
+}
+
+.post_title {
+	font-size: 36px;
+}
+
+.blog_date {
+	color: #77D9D3;
+	font-style: italic;
+}
+
+.blog_preview {
+	padding-top: 40px;
+	border-bottom: 2px solid  #D6D6D6;
+}
+
+.blog_content {
+	line-height: 2.0;
+	margin-top: 40px;
+}
+
+.blog_preview_img_box {
+    background-color: #666;
+    padding-top: 20px;
+    color: white;
+    padding-bottom: 40px;
+    margin-bottom: 20px;
+}
+
+.blog_post_img_wrap {
+	display: block;
+	margin: 20px auto;
+	width: 100%;
+	height: 250px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#blog_1 {
+	background-image: url('../images/bik1.png');
+}
+
+#read_more_button {
+	color: darkcyan;
+	border: 1px solid darkcyan;
+	text-align: center;
+	padding: 10px;
+	margin: 20px auto;
+	width: 50%;
+	height: 40px;
+	display: block;
+	transition: background-color .5s;
+}
+
+#read_more_button:hover {
+	color: #FFF;
+	background-color: darkcyan;
+}
+
+/* == BLOG SINGLE PAGE == */
+
+.single_post_head {
+	background-color: #666;
+	margin-top: 0;
+	color: #FFF;
+}
+
+.blog_date {
+
+}
+
+.blog_song {
+	width: 50%;
+	float: right;
+	padding: 0 0 20px 20px;
+}
+
+.blog_content {
+	padding-right: 30px;
+}
+
+.more_blog_section {
+	margin-top: 20px;
+}
+
+.more_blog_section h2 {
+	font-family: 'BenchNine', sans-serif;
+	font-weight: 400;
+	font-size: 26px;
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+.more_blog_section h3.content_title {
+	padding: 10px 0 0 ;
+	margin-bottom: 0;
+}
+
+.more_blog_img {
+    height: 0;
+    display: block;
+    padding-bottom: 75%;
+    padding-top: 20px;
+    width: 100%;
+    margin: auto;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+
+.more_blog_img:hover .more_blog_img_overlay {
+	display: block;
+	opacity: 1;
+	height: 100%;
+}
+
+.more_blog_img_overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 0;
+	width: 100%;
+	background-color: rgba(0,0,0,0.5);
+	color: white;
+	text-align: center;
+	line-height: 100%;
+	opacity: 0;
+	transition: opacity 0.5s ease-out;
+	overflow: hidden;
+}
+
+.more_blog_img_overlay_text {
+	font-family: 'BenchNine', sans-serif;
+	font-weight: 400;
+	font-size: 40px;
+	position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0;
+}
+
+#more_blog_img_1 {
+    background-image: url('../images/bik1.png');
+    background-color: black;
+}
+
+#more_blog_img_2 {
+    background-image: url('../images/me_river.jpg');
+}
+
+#more_blog_img_3 {
+    background-image: url('../images/beach.jpeg');
+}
+
+/* == SIDEBAR STYLES == */
+
+.sidebar_title {
+	position: relative;
+	text-align: center;
+	display: block;
+}
+
+.sidebar_title span {
+	background-color: white;
+	padding: 0 10px;
+}
+
+.sidebar_title::before {
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 0;
+	right: 0;
+	border-top: 1px solid #666;
+	z-index: -1;
+}
+
+.sidebar_item_wrapper {
+	margin-bottom: 40px;
+}
+
+.sidebar_item_title {
+	background-color: #F3F315;
+	border-radius: 10px;
+	text-align: center;
+	padding: 5px 0;
+}
+
+
+.sidebar_section iframe {
+	display: block;
+	margin: auto;
+}
+
+.sidebar_pic {
+	background-image: url('../images/running.jpg');
+	background-position: top;
+	background-repeat: no-repeat;
+	background-size: cover;
+	max-width: inherit;
+	height: 300px;
+	border-radius: 1000px;
+}
+
+.about_me_overlay {
+	visibility: hidden;
+	background: rgba(102, 102, 102, 0.5);
+	color: #FFF;
+	text-align: center;
+	padding: 50px;
+	width: inherit;
+	height: inherit;
+	font-family: 'BenchNine', 'Helvetica', sans-serif;
+	font-size: 26px;	
+}
+
+.sidebar_pic:hover .about_me_overlay {
+	visibility: visible;
+}
+
+/* == FOOTER STYLES == */
+
+footer {
+	height: 100px;
+	margin-top: 40px;
+	box-shadow: 0 -10px 18px -10px rgba(0, 0, 0, .5);
+}
+
+footer i.fa {
+	font-size: 44px;
+	color: #FF0099;
+}
+
+.social_links {
+	display: block;
+	list-style-type: none;
+	width: 250px;
+	margin: 40px auto;
+}
+
+.social_links li {
+	display: inline;
+	padding: 10px;
+}
+
+.social_links i {
+	transition: color .5s;
+}
+
+.social_links i:hover {
+	color: pink;
+}
+
+
+    @media only screen and (min-width : 320px) and (max-width: 991px) {
+		#main_title {
+			margin: 40px auto 0;
+		}
+
+		nav ul li {
+			display: block;
+			margin: 20px 0;
+			width: 100%;
+		}       
+
+		.photo_holder {
+			width: 100%;
+		} 
+
+		.down_arrow {
+			display: none !important;
+		}
+
+		#read_more_button {
+			width: 100%;
+		}
+    }
+
+    /* Extra Small Devices, Phones */ 
+    @media only screen and (min-width : 480px) {
+
+    }
+
+    /* Small Devices, Tablets */
+    @media only screen and (min-width : 768px) {
+
+    }
+
+    /* Medium Devices, Desktops */
+    @media only screen and (min-width : 992px) {
+
+    }
+
+    /* Large Devices, Wide Screens */
+    @media only screen and (min-width : 1200px) {
+
+    }
+
+
+
+
+BLOG TITLE -> ARVO
+MENU -> BENCHNINE
+
+TITLE -> INDIETRONICA, ORANGE JUICE, KG SECOND CHANCES, A SONG FOR JENNIFER, DK BODIAM
