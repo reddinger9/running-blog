@@ -1,5 +1,7 @@
 jQuery(document).ready(function($){
 	
+/* == HIGHLIGHTS CURRENT BLOG PREVIEW ON FRONT PAGE == */
+
 	var $blog_preview = $('.blog_preview_wrapper');
 
 	$blog_preview.eq(0).css('opacity', '.99');
@@ -12,6 +14,35 @@ jQuery(document).ready(function($){
 	$blog_preview.not($blog_preview.eq(0)).mouseover(function(){
 		$blog_preview.eq(0).css('opacity', '.6');
 	});
+
+/* == SHOW COMMMENTS ON SINGLE BLOG == */
+
+function show_comments(){
+	
+	var $show_button = $('#show_comments_button'),
+		$show_button_text = $('#show_comments_button'),
+		$reader_comments = $('#comment-list')
+
+
+	$show_button.click(function(event) {
+  		event.preventDefault();
+
+		$('#comment-list').toggle('slow',
+			function(){
+				if( $reader_comments.css('display') == 'none' ) {
+					$show_button_text.text('View Comments');
+				} else if ( $reader_comments.css('display') == 'block' ) {
+					$show_button_text.text('Hide Comments');
+				};
+			});
+
+		});
+
+};
+
+show_comments();
+
+/* == DOWN ARROW == 
 
 	$(window).scroll(function() {
 
@@ -32,6 +63,8 @@ function scrollToAnchor(){
 $(".down_arrow").click(function() {
    scrollToAnchor();
 });
+
+*/
 
 /* EXTENDS BORDER FOR SIDEBAR OR MAIN SECTION, WHICHEVER IS LARGER */
 

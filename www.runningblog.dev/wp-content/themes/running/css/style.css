@@ -10,7 +10,7 @@ Orange Juice, Alegrya, BenchNine
 
 BABY BLUE = 77D9D3 / 119,217,211
 NEON YELLOW = F3F315 / 243,243,21
-
+NEON PINK = FF0099
 
 */
 
@@ -241,14 +241,14 @@ body .blog_preview_box {
 	padding: 30px;
 }
 
-#single_blog_content > h1 {
+#single_blog_content_header h1 {
 	text-align: center;
 	font-size: 46px;
 	font-weight: bold;
 	margin: 30px 0 10px;
 }
 
-#single_blog_content > h3{
+#single_blog_content_header h3{
 	text-align: center;
 	margin-top: 10px;
 }
@@ -257,8 +257,20 @@ body .blog_preview_box {
 	font-style: italic;
 }
 
+#single_blog_content_header,
 #content_box {
 	padding: 20px 20px;
+	position: relative;
+}
+
+#single_blog_content_header:before {
+	content: ""; 
+  background: #77D9D3; 
+  position: absolute; 
+  bottom: 0; 
+  left: 25%; 
+  width: 50%; 
+  height: 5px;
 }
 
 .more_blog_section {
@@ -334,11 +346,94 @@ body .blog_preview_box {
     background-image: url('../images/beach.jpeg');
 }
 
+/* == COMMENTS AREA == */
+
+.comment-body {
+	padding: 20px 0;
+	border-bottom: 2px solid #77D9D3;
+}
+
+.comments-area label {
+	display: block;
+}
+
+ul.comment-list {
+	padding-left: 0;
+}
+
+#comment {
+	width: 75%;
+	border: 2px solid #666;
+}
+
+.comments-title {
+	margin-bottom: 20px;
+}
+
+.comment-reply-title {
+	font-family: 'Orange_Juice', sans-serif;
+	font-size: 32px;
+	margin-top: 35px;
+}
+
+.comment-reply-link {
+		float: right;
+    border: 2px solid #77D9D3;
+    padding: 5px;
+    text-transform: uppercase;
+}
+
+#comments h2.comments-title {
+	font-size: 24px;
+}
+
+.comment-author {
+		font-family: 'Alegreya', serif;
+    font-size: 20px;
+}
+
+.comment-box {
+	width: 100%;
+	background-color: #F2F2F2;
+	min-height: 100px;
+	margin: 5px 0;
+	padding: 10px;
+}
+
+.comment-list {
+	display: none;
+}
+
+.comment-list, 
+ul.children {
+	list-style-type: none;
+}
+
+.form-submit .submit {
+		border: none;
+    background: #77D9D3;
+    color: white;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin: 10px 0;
+    padding: 10px 20px; 
+    border-radius: 5px;
+    transition: background 0.5s;
+}
+
+.form-submit .submit:hover {
+	background: #68B9B3;
+}
+
 /* == RESPONSIVE QUERIES == */
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 720px) {
 	
 	.preview_img {
+		width: 100%;
+	}
+
+	.form-submit .submit {
 		width: 100%;
 	}
 
@@ -362,6 +457,10 @@ body .blog_preview_box {
 	#content_box {
 		padding: 40px 100px;
 	}
+
+	#comments {
+	padding-left: 100px;
+}
 
 
 }
