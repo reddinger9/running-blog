@@ -42,6 +42,17 @@ function show_comments(){
 
 show_comments();
 
+/* == SHOW TEXT FOR SIDEBAR BUTTONS */
+
+function show_sidebar_content(){
+
+	$('.sidebar_item_wrapper').hover(function() {
+		$( this ).children('.sidebar_item_content').toggle('fast');
+	});
+};
+
+show_sidebar_content();
+
 /* == DOWN ARROW == 
 
 	$(window).scroll(function() {

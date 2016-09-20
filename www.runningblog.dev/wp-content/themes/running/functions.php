@@ -26,6 +26,16 @@ function my_get_posts( $query ) {
 	return $query;
 }
 
+/* == REGISTER MENUS == */
+
+function reg_menus(){
+	register_nav_menus(array (
+		'header-nav' => 'Header Navigation',
+		'footer-nav' => 'Footer Navigation'
+		));
+}
+add_action('init', 'reg_menus');
+
 /* == COMMENT TEXT BOX IN REPLY THREAD == */
 
 if ( get_option('thread_comments') ) {

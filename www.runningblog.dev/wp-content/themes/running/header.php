@@ -29,10 +29,16 @@
 				</ul>
 			</div>	
 			<div class="sidebar_item_wrapper">
-				<div class="sidebar_item_title"><span class="fa fa-user"></span></div>
+				<a class="sidebar_item_title"><span class="fa fa-user"></span></a>
+				<div class="sidebar_item_content">
+					WHO I AM
+				</div>
 			</div>
 			<div class="sidebar_item_wrapper">
-				<div class="sidebar_item_title"><span class="glyphicon glyphicon-headphones"></span></div>
+				<a class="sidebar_item_title"><span class="glyphicon glyphicon-headphones"></span></a>
+				<div class="sidebar_item_content">
+					SLAYLIST
+				</div>
 				<!--<iframe src="https://embed.spotify.com/?uri=spotify:user:127478208:playlist:27Bn20rjQPtFzwfrzdJZqG" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>	-->			
 			</div>
 		</div>
